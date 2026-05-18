@@ -1,30 +1,62 @@
-import React from 'react'
+import React from "react";
 
 const Page4 = () => {
   return (
+    <footer className="bg-[#371821] text-white font-serif mt-10">
+      
+      {/* Main Footer Section */}
+      <div className="max-w-7xl mx-auto px-8 md:px-20 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        
+        {/* Products */}
+        <div>
+          <h1 className="text-xl font-semibold mb-4">Products</h1>
+          <p className="text-sm text-gray-300 leading-6">
+            Discover premium coffee drinks made with fresh ingredients and
+            crafted with love for every coffee lover.
+          </p>
+        </div>
 
-    <div className='font-serif flex items-center justify-between gap-15 bg-[#371821] mt-10 p-20'>
+        {/* Categories */}
+        <div>
+          <h1 className="text-xl font-semibold mb-4">Categories</h1>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li>Cold Coffee</li>
+            <li>Milkshakes</li>
+            <li>Espresso</li>
+            <li>Latte</li>
+          </ul>
+        </div>
 
-      <div className='text-white p-20 mt-10'>
-        <h1 className='text-xl'>Products</h1>
-        <p className='w-40 text-sm mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, omnis?</p>
+        {/* Company Info */}
+        <div>
+          <h1 className="text-xl font-semibold mb-4">Company Info</h1>
+          <ul className="text-sm text-gray-300 space-y-2">
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Support</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        {/* Social Media */}
+        <div>
+          <h1 className="text-xl font-semibold mb-4">Follow Us</h1>
+
+          <div className="flex gap-4 text-2xl">
+            <i className="ri-instagram-line cursor-pointer hover:text-gray-300"></i>
+            <i className="ri-facebook-circle-fill cursor-pointer hover:text-gray-300"></i>
+            <i className="ri-youtube-line cursor-pointer hover:text-gray-300"></i>
+            <i className="ri-twitter-x-line cursor-pointer hover:text-gray-300"></i>
+          </div>
+        </div>
       </div>
-      <div className='text-white p-20'>
-        <h1 className='text-xl'>Category</h1>
-        <p className='w-40 text-sm mt-10'>Men</p>
-      </div><div className='text-white p-20 mt-10'>
-        <h1 className='text-xl'>Company Info</h1>
-        <p className='w-20 text-sm mt-10'>About Us Contact Us Support</p>
+
+      {/* Bottom Footer */}
+      <div className="border-t border-gray-600 text-center py-4 text-sm text-gray-300">
+        © 2026 Coffee House | All Rights Reserved
       </div>
-      <div className="text-white p-20 mt-10 flex flex-col">
-  <h1 className="text-xl">Follow</h1>
+    </footer>
+  );
+};
 
-  <i className="ri-instagram-line mt-10"></i>
-  <i className="ri-facebook-circle-fill"></i>
-  <i className="ri-youtube-line"></i>
-</div>
-    </div>
-  )
-}
-
-export default Page4
+export default Page4;
